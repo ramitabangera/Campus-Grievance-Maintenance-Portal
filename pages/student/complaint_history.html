@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complaint History</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/home.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Complaint History</h1>
+</header>
+
+<div style="margin:20px;">
+    <a href="student_dashboard.html" class="btn">← Back to Dashboard</a>
+</div>
+
+<div class="dashboard">
+
+<h2>My Complaints</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%" style="background:white;">
+
+<tr style="background:#0b3d91;color:white;">
+<th>Ticket ID</th>
+<th>Category</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>CG101</td>
+<td>Wi-Fi</td>
+<td>Internet not working in Lab 2</td>
+<td style="color:orange;"><b>Pending</b></td>
+</tr>
+
+<tr>
+<td>CG102</td>
+<td>Classroom</td>
+<td>Projector not working</td>
+<td style="color:blue;"><b>In Progress</b></td>
+</tr>
+
+<tr>
+<td>CG103</td>
+<td>Electricity</td>
+<td>Fan not working</td>
+<td style="color:green;"><b>Resolved</b></td>
+</tr>
+
+</table>
+
+</div>
+<button class ="back-btn" onclick ="history.back()"> ← Back</button>
+
+</body>
+</html>

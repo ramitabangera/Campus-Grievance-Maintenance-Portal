@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raise Complaint</title>
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/home.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Campus Grievance & Maintenance Portal</h1>
+</header>
+
+<div style="margin:20px;">
+    <a href="student_dashboard.html" class="btn">← Back to Dashboard</a>
+</div>
+
+<div class="form-container">
+
+<h2>Raise a Complaint</h2>
+
+<form>
+
+<label>Complaint Category</label>
+
+<select required>
+<option value="">Select Category</option>
+<option>Classroom</option>
+<option>Laboratory</option>
+<option>Library</option>
+<option>Washroom</option>
+<option>Canteen</option>
+<option>Wi-Fi</option>
+<option>Electricity</option>
+<option>Water Supply</option>
+<option>Cleanliness</option>
+<option>Security</option>
+<option>Sports</option>
+<option>Other</option>
+</select>
+
+<label>Complaint Title</label>
+<input type="text" placeholder="Enter Complaint Title" required>
+
+<label>Description</label>
+
+<textarea rows="6" placeholder="Describe your complaint here..." required></textarea>
+
+<label>Upload Image (Optional)</label>
+<input type="file">
+
+<button type="submit" class="btn">Submit Complaint</button>
+
+</form>
+
+</div>
+<button class ="back-btn" onclick ="history.back()"> ← Back</button>
+</body>
+</html>

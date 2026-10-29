@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Complaints</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/home.css">
+
+<style>
+
+.complaint-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:20px;
+}
+
+.complaint-table th,
+.complaint-table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.complaint-table th{
+    background:#0b3d91;
+    color:white;
+}
+
+.status-pending{
+    color:#d97706;
+    font-weight:bold;
+}
+
+.status-progress{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.status-resolved{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.action-btn{
+    display:inline-block;
+    padding:7px 12px;
+    margin:3px;
+    border-radius:5px;
+    text-decoration:none;
+    background:#0b3d91;
+    color:white;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>CGMP Admin</h2>
+
+<a href="admin_dashboard.html">📊 Dashboard</a>
+<a href="manage_complaints.html">📋 Complaints</a>
+<a href="manage_students.html">👨‍🎓 Students</a>
+<a href="reports.html">📈 Reports</a>
+<a href="settings.html">⚙ Settings</a>
+<a href="../../index.html">🚪 Logout</a>
+
+</div>
+
+
+<div class="main">
+
+<div class="topbar">
+
+<h2>Manage Complaints</h2>
+
+<p>View and manage complaints submitted by students.</p>
+
+</div>
+
+
+<div class="topbar">
+
+<h3>Complaint List</h3>
+
+
+<table class="complaint-table">
+
+<tr>
+
+<th>Ticket ID</th>
+<th>Student</th>
+<th>Category</th>
+<th>Priority</th>
+<th>Date</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+
+<tr>
+
+<td>CG101</td>
+<td>Ramita</td>
+<td>Wi-Fi</td>
+<td>Medium</td>
+<td>29-07-2026</td>
+
+<td class="status-pending">
+Pending
+</td>
+
+<td>
+<a href="#" class="action-btn">View</a>
+<a href="#" class="action-btn">Update</a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>CG102</td>
+<td>Student 02</td>
+<td>Library</td>
+<td>Low</td>
+<td>28-07-2026</td>
+
+<td class="status-progress">
+In Progress
+</td>
+
+<td>
+<a href="#" class="action-btn">View</a>
+<a href="#" class="action-btn">Update</a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>CG103</td>
+<td>Student 03</td>
+<td>Electricity</td>
+<td>High</td>
+<td>27-07-2026</td>
+
+<td class="status-resolved">
+Resolved
+</td>
+
+<td>
+<a href="#" class="action-btn">View</a>
+<a href="#" class="action-btn">Update</a>
+</td>
+
+</tr>
+
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+<button class ="back-btn" onclick ="history.back()"> Back</button>
+</html>

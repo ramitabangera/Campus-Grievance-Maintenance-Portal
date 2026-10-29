@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Login</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+
+<style>
+/* Login Selection - Header Fix */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    overflow-x: hidden;
+}
+
+
+
+.login-selection{
+    width:500px;
+    margin:80px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.login-selection h2{
+    color:#0b3d91;
+    margin-bottom:15px;
+}
+
+.login-selection p{
+    margin-bottom:30px;
+    color:#555;
+}
+
+.login-card{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    border:2px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    margin:20px 0;
+    transition:0.3s;
+}
+
+.login-card:hover{
+    border-color:#0b3d91;
+    background:#f4f7fc;
+}
+
+.login-card h3{
+    color:#0b3d91;
+}
+.login-header {
+    position: relative !important;
+    width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    background: #0b3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-header h1 {
+    margin: 0 !important;
+}
+
+.login-header h1 {
+    margin: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="login-header">
+    <h1>Campus Grievance & Maintenance Portal</h1>
+</div>
+
+<div class="login-selection">
+
+<h2>Select Login Type</h2>
+
+<p>Please choose how you want to continue.</p>
+
+<a href="student/student_login.php" class="login-card">
+<h3>👨‍🎓 Student Login</h3>
+<p>Register complaints and track their status.</p>
+</a>
+
+<a href="admin/admin_login.php" class="login-card">
+<h3>👨‍💼 Admin Login</h3>
+<p>Manage complaints and update their status.</p>
+</a>
+
+<br>
+
+<a href="../index.php" class="back-btn">
+    ← Back to Home
+</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/home.css">
+
+    <style>
+        .back-btn {
+            display: inline-block !important;
+            width: auto !important;
+            background: #0b3d91 !important;
+            color: white !important;
+            border: none !important;
+            padding: 10px 20px !important;
+            border-radius: 5px !important;
+            cursor: pointer !important;
+            font-weight: bold !important;
+            margin: 20px !important;
+        }
+
+        .back-btn:hover {
+            background: #08306b !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button type="button" class="back-btn" onclick="history.back()">
+        ← Back
+    </button>
+
+    <header>
+        <h1>Campus Grievance & Maintenance Portal</h1>
+    </header>
+
+    <div style="margin:20px;">
+        <a href="../../index.html" class="btn">← Home</a>
+    </div>
+
+    <div class="form-container">
+
+        <h2>Admin Login</h2>
+
+        <form onsubmit="loginAdmin(event)">
+
+            <input type="text" id="username" placeholder="Username" required>
+
+            <div class="password-box">
+    <input type="password" id="password" placeholder="Password" required>
+    <label>
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+    </label>
+</div>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function loginAdmin(event) {
+
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin123") {
+
+                window.location.href = "admin_dashboard.html";
+
+            } else {
+
+                alert("Invalid username or password!");
+
+            }
+
+        }
+		
+		function togglePassword() {
+    const password = document.getElementById("password");
+
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
+
+    </script>
+
+</body>
+</html>

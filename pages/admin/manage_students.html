@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Students</title>
+
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/home.css">
+
+<style>
+
+.student-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    margin-top:20px;
+}
+
+.student-table th,
+.student-table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+.student-table th{
+    background:#0b3d91;
+    color:white;
+}
+
+.student-btn{
+    display:inline-block;
+    padding:7px 12px;
+    margin:3px;
+    border-radius:5px;
+    text-decoration:none;
+    background:#0b3d91;
+    color:white;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>CGMP Admin</h2>
+
+<a href="admin_dashboard.html">📊 Dashboard</a>
+<a href="manage_complaints.html">📋 Complaints</a>
+<a href="manage_students.html">👨‍🎓 Students</a>
+<a href="reports.html">📈 Reports</a>
+<a href="settings.html">⚙ Settings</a>
+<a href="../../index.html">🚪 Logout</a>
+
+</div>
+
+
+<div class="main">
+
+<div class="topbar">
+
+<h2>Manage Students</h2>
+
+<p>View registered students and their details.</p>
+
+</div>
+
+
+<div class="topbar">
+
+<h3>Registered Students</h3>
+
+<table class="student-table">
+
+<tr>
+
+<th>Student ID</th>
+<th>Name</th>
+<th>Roll Number</th>
+<th>Department</th>
+<th>Email</th>
+<th>Action</th>
+
+</tr>
+
+
+<tr>
+
+<td>STU1001</td>
+<td>Ramita Bangera</td>
+<td>IT001</td>
+<td>B.Sc IT</td>
+<td>student@sies.edu.in</td>
+
+<td>
+<a href="#" class="student-btn">View</a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>STU1002</td>
+<td>Student 02</td>
+<td>IT002</td>
+<td>B.Sc IT</td>
+<td>student02@sies.edu.in</td>
+
+<td>
+<a href="#" class="student-btn">View</a>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>STU1003</td>
+<td>Student 03</td>
+<td>IT003</td>
+<td>B.Sc IT</td>
+<td>student03@sies.edu.in</td>
+
+<td>
+<a href="#" class="student-btn">View</a>
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html><button class ="back-btn" onclick ="history.back()"> ← Back</button>

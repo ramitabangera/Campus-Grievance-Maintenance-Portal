@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/home.css">
+</head>
+<body>
+
+<header>
+    <h1>Campus Grievance & Maintenance Portal</h1>
+</header>
+
+<div style="margin:20px;">
+    <button class="btn" onclick="history.back()">← Back</button>
+</div>
+<div class="form-container">
+    <h2>Student Registration</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Roll Number</label>
+        <input type="text" placeholder="Enter Roll Number" required>
+
+        <label>Department</label>
+        <select required>
+            <option>Select Department</option>
+            <option>BSc IT</option>
+            <option>BCom</option>
+            <option>BA</option>
+            <option>BMS</option>
+        </select>
+
+        <label>Class</label>
+        <select required>
+            <option>Select Class</option>
+            <option>FY</option>
+            <option>SY</option>
+            <option>TY</option>
+        </select>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter Mobile Number" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create Password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" required>
+
+        <button type="submit" class="btn">Register</button>
+
+    </form>
+</div>
+<button class ="back-btn" onclick ="history.back()"> ← Back</button>
+</body>
+</html>
